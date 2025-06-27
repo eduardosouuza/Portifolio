@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #201e26;
+  color: #9f9f9f;
+  font-family: 'Arial', sans-serif;
+  background:
+      radial-gradient(circle at 10% 110%, #5e17eb77 0, transparent 40%),
+      radial-gradient(circle at 100% 8%, #935dff66 0, transparent 20%),
+      #201e26;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------------- HEADER & NAV ---------------- */
+header, main{
+  overflow: 100vh
+
+}
+header {
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9rem;
+}
+
+ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+ul li a:hover {
+  color: #935dff;
+}
+
+#btn-agende {
+  background-color: #5e17eb;
+  color: #201e26;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav #btn-agende:hover {
+  transition: background-color 0.3s ease;
+  background-color: #5e17eb9d;
+}
+
+/* ---------------- MAIN ---------------- */
+main.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  gap: 2rem;
+  padding-left: 4rem;
+  padding-right: 13rem;
+}
+
+/* Seção esquerda (imagem) */
+section.left img {
+  width: 400px;
+  height: 600px;
+  
+}
+
+/* Seção direita (textos) */
+section.right {
+  height: 390px;
+  text-align: left;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+section.right p.intro {
+  font-size: 14px;
+  color: #9f9f9f;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+section.right h1 {
+  font-size: 64px;
+  line-height: 1;
+  margin: 0.5rem 0;
+  font-family: "Archivo Black", sans-serif;
+}
+
+section.right .web,
+section.right .dev {
+  color: #5e17eb;
+  font-family: "Archivo Black", sans-serif;
+}
+
+/* Frase abaixo do título */
+section.right .descricao {
+  font-size: 13px;
+  color: #9f9f9f;
+  font-weight: 500;
+  max-width: 380px;
+  line-height: 1.4;
+  font-weight: 900;
+  
+}
+
+/* Texto no canto inferior direito */
+.frase-baixo {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  text-align: right;
+  font-size: 12px;
+  color: #9f9f9f;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
